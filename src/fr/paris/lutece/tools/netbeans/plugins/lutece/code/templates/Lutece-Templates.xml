@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="row" xml:space="preserve">
+        <code><![CDATA[<@row>
+                    <@columns>
+            ${cursor}
+                    </@columns>
+                 </@row>]]>
+        </code>
+        <description><![CDATA[Lutece row macro]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="bh" xml:space="preserve">
+        <code><![CDATA[<@boxHeader title='#i18n{${cursor}}' />]]>
+        </code>
+        <description><![CDATA[Lutece boxHeader macro]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="fgi" xml:space="preserve">
+        <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
+                         <@input type='text' name='' value='!\'\'}' />
+</@formGroup>]]>
+        </code>
+        <description><![CDATA[Lutece formGroup + input]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="fgc" xml:space="preserve">
+        <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}'>
+                                <@checkBox labelKey='#i18n{}' name='' value='1' />
+                            </@formGroup>]]>
+        </code>
+        <description><![CDATA[Lutece formGroup + input]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="fgs" xml:space="preserve">
+        <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
+                         <@select name='' items= default_value='' />
+</@formGroup>]]>
+        </code>
+        <description><![CDATA[Lutece formGroup + select]]></description>
+    </codetemplate>
+</codetemplates>
+
