@@ -1,7 +1,9 @@
 # Lutece Snippets for NetBeans
 
+This Netbeans plugin will add some Lutece snippets to the default Code Templates for HTML documents. 
+
 ## Usage
-Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the snippet unfolds.
+Type the abbreviation of a snippet, press <code>tab</code>, and the snippet unfolds.
 
 ### Lutece Snippets
 
@@ -67,7 +69,7 @@ Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the sn
 **fi** : Lutece input into formGroup
 ```
 <@formGroup labelKey='#i18n{}' helpKey='#i18n{}' mandatory=true>
-                         <@input type='text' name='' value='!\'\'}' />
+    <@input type='text' name='' value='!\'\'}' />
 </@formGroup>
 ```
 
