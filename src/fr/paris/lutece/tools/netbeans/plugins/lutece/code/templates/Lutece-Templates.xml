@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
 <codetemplates>
-    <codetemplate abbreviation="row" xml:space="preserve">
+
+    <!--  ***************** Structure code templates ************************** -->
+    <!-- row -->
+    <codetemplate abbreviation="rw" xml:space="preserve">
         <code><![CDATA[<@row>
                     <@columns>
             ${cursor}
@@ -10,31 +13,132 @@
         </code>
         <description><![CDATA[Lutece row macro]]></description>
     </codetemplate>
+    
+    
+    <!-- box -->
+    <codetemplate abbreviation="bx" xml:space="preserve">
+        <code><![CDATA[<@box>
+	<@boxHeader title='#i18n{${cursor}}' />
+	<@boxBody>
+        </@boxBody>
+        </@box>]]>
+        </code>
+        <description><![CDATA[Lutece box macro]]></description>
+    </codetemplate>      
+
+
+    <!-- boxHeader --> 
     <codetemplate abbreviation="bh" xml:space="preserve">
         <code><![CDATA[<@boxHeader title='#i18n{${cursor}}' />]]>
         </code>
         <description><![CDATA[Lutece boxHeader macro]]></description>
     </codetemplate>
-    <codetemplate abbreviation="fgi" xml:space="preserve">
+
+
+    <!-- table -->
+    <codetemplate abbreviation="tbl" xml:space="preserve">
+        <code><![CDATA[<@table>
+        <@tr>
+            <@th hide=['xs','sm']>${cursor}</@th>
+        </@tr>
+        <@tr>
+            <@td hide=['xs','sm']></@td>
+        </@tr>
+        </@table>            
+            ]]>
+        </code>
+        <description><![CDATA[Lutece table macro]]></description>
+    </codetemplate>
+
+
+    <!-- table header -->
+    <codetemplate abbreviation="th" xml:space="preserve">
+        <code><![CDATA[<@th hide=['xs','sm']>${cursor}</@th>]]>
+        </code>
+        <description><![CDATA[Lutece table header macro]]></description>
+    </codetemplate>
+
+
+    <!-- table data -->
+    <codetemplate abbreviation="td" xml:space="preserve">
+        <code><![CDATA[<@td hide=['xs','sm']>${cursor}</@td>]]>
+        </code>
+        <description><![CDATA[Lutece table data macro]]></description>
+    </codetemplate>
+
+
+
+    <!--  ***************** Forms code templates ************************** -->
+
+    <!-- form -->
+    <codetemplate abbreviation="frm" xml:space="preserve">
+        <code><![CDATA[<@tform name='${cursor}' action=''>
+        <@messages errors=errors />
+
+    </@tform>]]>
+        </code>
+        <description><![CDATA[Lutece form]]></description>
+    </codetemplate>
+
+        
+    <!-- input field inside a form group -->
+    <codetemplate abbreviation="fi" xml:space="preserve">
         <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
                          <@input type='text' name='' value='!\'\'}' />
 </@formGroup>]]>
         </code>
         <description><![CDATA[Lutece formGroup + input]]></description>
     </codetemplate>
-    <codetemplate abbreviation="fgc" xml:space="preserve">
+
+
+    <!-- checkbox field inside a form group -->
+    <codetemplate abbreviation="fc" xml:space="preserve">
         <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}'>
                                 <@checkBox labelKey='#i18n{}' name='' value='1' />
                             </@formGroup>]]>
         </code>
         <description><![CDATA[Lutece formGroup + input]]></description>
     </codetemplate>
-    <codetemplate abbreviation="fgs" xml:space="preserve">
+
+        
+    <!-- select field inside a form group -->
+    <codetemplate abbreviation="fs" xml:space="preserve">
         <code><![CDATA[<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
                          <@select name='' items= default_value='' />
 </@formGroup>]]>
         </code>
         <description><![CDATA[Lutece formGroup + select]]></description>
     </codetemplate>
+
+        
+    <!-- button -->
+    <codetemplate abbreviation="bt" xml:space="preserve">
+        <code><![CDATA[<@button color='primary' title='#i18n{${cursor}}' />]]>
+        </code>
+        <description><![CDATA[Lutece button]]></description>
+    </codetemplate>
+    
+    
+    
+    <!--  ***************** Standard Freemarker code templates ************************** -->
+        
+    <!-- Standard Freemarker If -->   
+    <codetemplate abbreviation="if" xml:space="preserve">
+        <code><![CDATA[<#if ${cursor} >
+                         <#else>
+</#if>]]>
+        </code>
+        <description><![CDATA[Freemarker If ]]></description>
+    </codetemplate>
+
+    <!-- Standard Freemarker List -->   
+    <codetemplate abbreviation="ls" xml:space="preserve">
+        <code><![CDATA[<#list ${cursor}  as   >
+                         
+</#list>]]>
+        </code>
+        <description><![CDATA[Freemarker List ]]></description>
+    </codetemplate>
+
 </codetemplates>
 
