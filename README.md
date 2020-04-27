@@ -19,8 +19,9 @@ Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the sn
 **bx** : Lutece box macro
 ```
 <@box>
-	<@boxHeader title='#i18n{}' />
-	<@boxBody>
+    <@boxHeader title='#i18n{}' />
+    <@boxBody>
+
     </@boxBody>
 </@box>  
 ```
@@ -34,7 +35,7 @@ Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the sn
 ```
 <@table>
     <@tr>
-        <@th hide=['xs','sm']>${cursor}</@th>
+        <@th hide=['xs','sm']></@th>
     </@tr>
     <@tr>
         <@td hide=['xs','sm']></@td>
@@ -44,12 +45,12 @@ Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the sn
 
 **th** : Lutece table header macro
 ```
-<@th hide=['xs','sm']>${cursor}</@th>
+<@th hide=['xs','sm']></@th>
 ```
 
 **td** : Lutece table data macro
 ```
-<@td hide=['xs','sm']>${cursor}</@td>
+<@td hide=['xs','sm']></@td>
 ```
 
 
@@ -65,28 +66,28 @@ Type part of a snippet, press <code>enter</code> or <code>tab</code>, and the sn
 
 **fi** : Lutece input into formGroup
 ```
-<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
+<@formGroup labelKey='#i18n{}' helpKey='#i18n{}' mandatory=true>
                          <@input type='text' name='' value='!\'\'}' />
 </@formGroup>
 ```
 
 **fc** : Lutece checkbox into formGroup
 ```
-<@formGroup labelKey='#i18n{${cursor}}'>
+<@formGroup labelKey='#i18n{}'>
     <@checkBox labelKey='#i18n{}' name='' value='1' />
 </@formGroup>
 ```
 
 **fs** : Lutece select into formGroup
 ```
-<@formGroup labelKey='#i18n{${cursor}}' helpKey='#i18n{}' mandatory=true>
+<@formGroup labelKey='#i18n{}' helpKey='#i18n{}' mandatory=true>
     <@select name='' items= default_value='' />
 </@formGroup>
 ```
 
 **bt** : Lutece button
 ```
-@button color='primary' title='#i18n{${cursor}}' />
+@button color='primary' title='#i18n{}' />
 ```
 
 #### Standard Freemarker code templates
